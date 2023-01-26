@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@microsoft/signalr": "^7.0.2",
+    "jquery": "^3.6.3"
+  }
+}
