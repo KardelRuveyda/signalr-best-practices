@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net5.0": {
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -188,7 +188,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net5.0": [
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\SignalR\\hub\\SignalRBestPractices\\SignalRBestPractices\\SignalRBestPractices.csproj",
-      "projectName": "SignalRBestPractices",
-      "projectPath": "C:\\Projects\\SignalR\\hub\\SignalRBestPractices\\SignalRBestPractices\\SignalRBestPractices.csproj",
+      "projectUniqueName": "C:\\Projects\\SignalR\\hub\\SignalRExample\\SignalRExample\\SignalRExample.csproj",
+      "projectName": "SignalRExample",
+      "projectPath": "C:\\Projects\\SignalR\\hub\\SignalRExample\\SignalRExample\\SignalRExample.csproj",
       "packagesPath": "C:\\Users\\ruveyda.cetin\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\SignalR\\hub\\SignalRBestPractices\\SignalRBestPractices\\obj\\",
+      "outputPath": "C:\\Projects\\SignalR\\hub\\SignalRExample\\SignalRExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -216,15 +216,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -235,8 +235,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -253,6 +253,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

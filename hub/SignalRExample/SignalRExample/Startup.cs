@@ -7,16 +7,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using SignalRServerExample.Hubs;
+using SignalRExample.Hubs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SignalRBestPractices
+namespace SignalRExample
 {
     public class Startup
     {
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -32,11 +33,7 @@ namespace SignalRBestPractices
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseWebSockets();
-
             app.UseHttpsRedirection();
-
-            app.UseRouting();
 
             app.UseRouting();
 
@@ -48,7 +45,6 @@ namespace SignalRBestPractices
                 .AllowCredentials()); // allow credentials            
 
             app.UseAuthorization();
-
 
             app.UseEndpoints(endpoints =>
             {
